@@ -328,6 +328,35 @@ hr{
     justify-content: center;
 }
 
+.page2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.page2 a{
+    color: white;
+    font-family: 'unbounded';
+    text-decoration: none;
+}
+
+.page2 a:hover{
+    color: #fffd00;
+}
+
+.page2 button{
+    background-color: black;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.page2 button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 /*Contatos*/
 
 .contacts{
