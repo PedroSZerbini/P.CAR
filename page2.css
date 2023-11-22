@@ -1,0 +1,39 @@
+.montadora{
+    width: 100%;
+    background-color: #424242;
+}
+
+.montadora .titulo1{
+    margin: 60px;
+    font-size: 2rem;
+    font-family: 'Unbounded', sans-serif;
+}
+
+.montadora .boxpai{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.montadora .boxs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.montadora .box{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 3px 10px rgba(255, 255, 255, 0.336);
+}
+
+.box:hover{
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+}
+
+.footer{
+    margin-top: 0;
+}
