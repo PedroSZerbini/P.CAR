@@ -31,6 +31,13 @@
 
 <body>
 
+    <!--Scrolltop-->
+    <article>
+        <button class="scrolltop" onclick="backTop();">
+            <i class="fa-solid fa-arrow-up-long" style="color: #000000;"></i>
+        </button>
+    </article>
+
     <!--topbar-->
     <nav class="topbar">
         <div class="contatos">
@@ -274,4 +281,17 @@
 
     <script src="header.js"></script>
     <script src="slide2.js"></script>
+    <script>
+        window.addEventListener('scroll', function(){
+            let scroll = document.querySelector('.scrolltop')
+                scroll.classList.toggle('active', window.scrollY > 450)   
+        })
+
+        function backTop(){
+            window.scrollTo({
+                top:0,
+                behavior: 'smooth'
+            })
+        }
+    </script>
 </body>    
