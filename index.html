@@ -31,6 +31,14 @@
 
 <body>
 
+    <!--Scrolltop-->
+    <article>
+        <button class="scrolltop" onclick="backTop();">
+            <i class="fa-solid fa-arrow-up-long" style="color: #000000;"></i>
+        </button>
+    </article>
+
+
     <!--topbar-->
     <nav class="topbar">
         <div class="contatos">
@@ -60,7 +68,7 @@
         <ul>
             <li><a href="#home" class="active">Pagina Inicial</a></li>
             <li><a href="#whyus">Quem Somos</a></li>
-            <li><a href="#montadoras">Montadoras</a></li>
+            <li><a href="page2.html#montadoras">Montadoras</a></li>
             <li><a href="#contato">Contato</a></li>
         </ul>
 
@@ -245,63 +253,7 @@
                 <a href="page2.html">Ver Todas</a>
             </button>
         </div>
-    <!--JS'S
-
-
-    const imgs = document.getElementById("img");
-    const img = document.querySelectorAll("#img img");
-
-    let isDragging = false;
-    let startPosX;
-    let startTranslateX;
-    let currentTranslateX = 0;
-
-    function handleMouseDown(event) {
-        isDragging = true;
-        startPosX = event.clientX;
-        startTranslateX = currentTranslateX;
-        imgs.style.cursor = "grabbing";
-    }
-
-    function handleMouseMove(event) {
-        if (isDragging) {
-            const deltaX = event.clientX - startPosX;
-            currentTranslateX = startTranslateX + deltaX / imgs.clientWidth * 100;
-            setTranslateX(currentTranslateX);
-        }
-    }
-
-    function handleMouseUp() {
-        if (isDragging) {
-            isDragging = false;
-            imgs.style.cursor = "grab";
-        }
-    }       
-
-    function handleMouseLeave() {
-        handleMouseUp();
-    }
-
-    function setTranslateX(translateX) {
-        imgs.style.transform = `translateX(${translateX}%)`;
-    }
-
-    function carrossel() {
-        if (!isDragging) {
-            currentTranslateX -= 0.1; // Ajuste a velocidade conforme necessário
-            setTranslateX(currentTranslateX);
-        }
-
-        requestAnimationFrame(carrossel);
-    }
-
-    imgs.addEventListener("mousedown", handleMouseDown);
-    imgs.addEventListener("mousemove", handleMouseMove);
-    imgs.addEventListener("mouseup", handleMouseUp);
-    imgs.addEventListener("mouseleave", handleMouseLeave);
-
-    requestAnimationFrame(carrossel);
-
+    
 
 
 
@@ -401,6 +353,77 @@
     <script src="header.js"></script>
     <script src="slide2.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function(){
+            let scroll = document.querySelector('.scrolltop')
+                scroll.classList.toggle('active', window.scrollY > 450)   
+        })
+
+        function backTop(){
+            window.scrollTo({
+                top:0,
+                behavior: 'smooth'
+            })
+        }
+    </script>
+
+    <!--JS'S
+
+
+    const imgs = document.getElementById("img");
+    const img = document.querySelectorAll("#img img");
+
+    let isDragging = false;
+    let startPosX;
+    let startTranslateX;
+    let currentTranslateX = 0;
+
+    function handleMouseDown(event) {
+        isDragging = true;
+        startPosX = event.clientX;
+        startTranslateX = currentTranslateX;
+        imgs.style.cursor = "grabbing";
+    }
+
+    function handleMouseMove(event) {
+        if (isDragging) {
+            const deltaX = event.clientX - startPosX;
+            currentTranslateX = startTranslateX + deltaX / imgs.clientWidth * 100;
+            setTranslateX(currentTranslateX);
+        }
+    }
+
+    function handleMouseUp() {
+        if (isDragging) {
+            isDragging = false;
+            imgs.style.cursor = "grab";
+        }
+    }       
+
+    function handleMouseLeave() {
+        handleMouseUp();
+    }
+
+    function setTranslateX(translateX) {
+        imgs.style.transform = `translateX(${translateX}%)`;
+    }
+
+    function carrossel() {
+        if (!isDragging) {
+            currentTranslateX -= 0.1; // Ajuste a velocidade conforme necessário
+            setTranslateX(currentTranslateX);
+        }
+
+        requestAnimationFrame(carrossel);
+    }
+
+    imgs.addEventListener("mousedown", handleMouseDown);
+    imgs.addEventListener("mousemove", handleMouseMove);
+    imgs.addEventListener("mouseup", handleMouseUp);
+    imgs.addEventListener("mouseleave", handleMouseLeave);
+
+    requestAnimationFrame(carrossel);
+
 
     
 </body>
