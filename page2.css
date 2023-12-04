@@ -46,6 +46,10 @@
     
 }
 
+.box img{
+    filter: drop-shadow(2px 4px 6px #121212);
+}
+
 .box:hover{
     transform: scale(1.1);
     transition: .2s ease-in-out;
