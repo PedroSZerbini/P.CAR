@@ -12,7 +12,7 @@ section.slider{
     width: 400%;
     height: 70vh;
     display: flex;
-    background-position: cover;
+    
 }
 
 .slider-content input, .img-mobile{
