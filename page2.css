@@ -7,6 +7,23 @@
     margin: 60px;
     font-size: 2rem;
     font-family: 'Unbounded', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo1 .page2 button{
+    margin: 10px;
+}
+
+.titulo1 .page2 .cta{
+    background-color: rgb(255, 251, 0);
+}
+
+.titulo1 .page2 .cta a{
+    color: black;
+    font-weight: 700;
 }
 
 .montadora .boxpai{
