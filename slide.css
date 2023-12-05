@@ -21,7 +21,7 @@ section.slider{
 
 .slide-box{
     width: 25%;
-    height: 600px;
+    height: auto;
     text-align: center;
     transition: 1s;
     background-position: left;
@@ -35,13 +35,13 @@ section.slider{
 .nav-manual, .nav-auto{
     position: absolute;
     width: 100%;
-    margin-top: 80vh;
+    margin-top: 72vh;
     display: flex;
     justify-content: center;
 }
 
 .nav-manual .manual-btn, .nav-auto div{
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
