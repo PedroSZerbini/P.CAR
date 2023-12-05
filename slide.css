@@ -10,7 +10,7 @@ section.slider{
 
 .slider-content{
     width: 400%;
-    height: 70vh;
+    height: 77vh;
     display: flex;
     
 }
@@ -29,7 +29,6 @@ section.slider{
 
 .slide-box img{
     width: 100%;
-    background-position: cover;
 }
 
 .nav-manual, .nav-auto{
