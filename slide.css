@@ -12,7 +12,6 @@ section.slider{
     width: 400%;
     height: 77vh;
     display: flex;
-    
 }
 
 .slider-content input, .img-mobile{
@@ -29,6 +28,7 @@ section.slider{
 
 .slide-box img{
     width: 100%;
+    height: auto;
 }
 
 .nav-manual, .nav-auto{
@@ -73,6 +73,7 @@ section.slider{
     margin-left: -50%;
 }
 
+/*
 @media screen and (max-width: 800px){
     .img-desktop{
         display: none;
@@ -80,6 +81,21 @@ section.slider{
 
     .img-mobile{
         display: block;
+    }
+}
+*/
+
+@media screen and (max-width: 650px){
+
+    .nav-manual, .nav-auto{
+    margin-top: 60vh;
+    }
+}
+
+@media screen and (max-width: 430px){
+
+    .nav-manual, .nav-auto{
+    margin-top: 49vh;
     }
 }
 
